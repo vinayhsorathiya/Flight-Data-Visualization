@@ -50,7 +50,7 @@ export class OriginComponent implements OnInit {
                 .attr("x", 6)
                 .attr("y", 6 - margin.top)
                 .attr("dy", ".75em");
-        d3.json("http://localhost:8081/assets/budget-data.json", function(data) {
+        d3.json("http://localhost:4200/assets/budget-data.json", function(data) {
             var root = d3.hierarchy(data);
             console.log(root);
             treemap(root

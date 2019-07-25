@@ -8,6 +8,6 @@ export class CarrierService {
   constructor (private http: HttpClient) {}
 
   getCarrier() {
-   return this.http.get('http://192.168.1.56:8080/incs/get/data/by/carrier');
+   return this.http.get('http://192.168.1.57:8080/incs/get/data/by/carrier');
    }
 }

@@ -59,7 +59,7 @@ export class DestinationComponent implements OnInit {
 
       d3.queue()
       .defer(d3.json, "https://raw.githubusercontent.com/d3/d3.github.com/master/world-110m.v1.json")
-      .defer(d3.json, "http://localhost:8081/assets/by_destination.json")
+      .defer(d3.json, "http://localhost:4200/assets/by_destination.json")
       .await(ready);
 
       function ready(error, world, places) {
